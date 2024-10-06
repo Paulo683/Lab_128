@@ -1,6 +1,6 @@
 # Lab_128 - Formulário de Contato
 
-E aí! Esse projeto é o resultado do Lab_128 da disciplina de Desenvolvimento de Sistemas Web. A ideia aqui era criar um formulário de contato bem simples, mas funcional, usando HTML, CSS e um pouco de Node.js. Além disso, conectamos o formulário a uma ferramenta chamada Formspree pra poder receber as mensagens de quem preencher.
+ Esse projeto é o resultado do Lab_128 da disciplina de Desenvolvimento de Sistemas Web. A ideia aqui era criar um formulário de contato bem simples, mas funcional, usando HTML, CSS e um pouco de Node.js. Além disso, conectamos o formulário a uma ferramenta chamada Formspree pra poder receber as mensagens de quem preencher.
 
 ## O que tem aqui
 
