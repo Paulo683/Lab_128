@@ -1,0 +1,149 @@
+/* Reset básico - zerar margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef3f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Logo no topo */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px; /* Ajuste conforme o necessário */
+    height: auto;
+}
+
+/* Aplicar a fonte aos inputs, textarea e botões */
+input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo dos placeholders */
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Faixa decorativa no fundo */
+.faixa-horizontal {
+    width: 100%;
+    height: 200px;
+    background-color: #6f5940;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* Layout principal */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 45px;
+    z-index: 1;
+}
+
+/* Estilo do formulário */
+.container {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Imagem ao lado do formulário */
+.image-container {
+    margin-left: -100px;
+    margin-top: 30px;
+    width: 450px;
+    z-index: 1;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Título do formulário */
+h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+/* Estilo dos inputs e textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 18px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Botão de envio */
+button {
+    background-color: #6f5940;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e422f;
+}
+
+/* Responsividade - ajuste para telas menores */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}

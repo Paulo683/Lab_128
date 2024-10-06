@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Logo no topo -->
+    <header>
+        <div class="logo-container">
+            <img src="img/puc.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Faixa decorativa -->
+    <div class="faixa-horizontal"></div>
+
+    <!-- Conteúdo principal: formulário e imagem -->
+    <div class="wrapper">
+        <div class="container">
+            <h2>CONTATE-NOS</h2>
+            <form action="https://formspree.io/f/xvgopqov" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Escreva seu Nome" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Escreva um email válido" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+
+        <!-- Imagem ao lado do formulário -->
+        <div class="image-container">
+            <img src="img/imagem.webp" alt="Imagem relacionada">
+        </div>
+    </div>
+</body>
+
+</html>
