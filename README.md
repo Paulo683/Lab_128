@@ -36,4 +36,3 @@ Acessa no navegador: Vai no http://localhost:3000 e vê o formulário rodando bo
 O que o formulário faz?
 Pega o nome, email e mensagem do usuário.
 Quando você clica em enviar, os dados vão pro Formspree.
-Tudo isso com um layout que se adapta bem em celular e desktop (responsivo é a palavra chique pra isso).
