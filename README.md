@@ -1,35 +1,39 @@
 # Lab_128 - Formulário de Contato
 
-Este projeto faz parte do laboratório 128 da disciplina de Desenvolvimento de Sistemas Web. O objetivo é criar um formulário de contato funcional utilizando HTML, CSS e JavaScript, com a possibilidade de integração com uma ferramenta de envio de dados. Além disso, o projeto inclui a configuração de um servidor Node.js para servir o conteúdo do formulário.
+E aí! Esse projeto é o resultado do Lab_128 da disciplina de Desenvolvimento de Sistemas Web. A ideia aqui era criar um formulário de contato bem simples, mas funcional, usando HTML, CSS e um pouco de Node.js. Além disso, conectamos o formulário a uma ferramenta chamada Formspree pra poder receber as mensagens de quem preencher.
 
-## Estrutura do Projeto
+## O que tem aqui
 
-- **public/**: Pasta que contém os arquivos estáticos, como HTML, CSS, e imagens.
-  - `index.html`: Página principal que contém o formulário de contato.
-  - `style.css`: Arquivo de estilo que define a aparência da página.
-  - `img/`: Pasta contendo as imagens utilizadas no projeto (logo e outras).
+- **public/**: Aqui ficam os arquivos estáticos (HTML, CSS e imagens).
+  - `index.html`: É a página do formulário.
+  - `style.css`: Estilos pra deixar a página bonita.
+  - `img/`: Contém as imagens do projeto (logo e etc).
 
-- **server.js**: Arquivo principal do servidor Node.js, configurado para servir os arquivos estáticos da pasta `public`.
+- **server.js**: Esse é o arquivo do Node.js que roda o servidor e serve os arquivos da pasta `public`.
 
-- **package.json** e **package-lock.json**: Arquivos de configuração do Node.js, contendo as dependências e scripts necessários para rodar o projeto.
+- **package.json** e **package-lock.json**: Esses são os arquivos que configuram as dependências e os scripts do Node.js.
 
-## Tecnologias Utilizadas
+## Ferramentas e Tecnologias
 
-- **HTML5**: Estrutura básica da página.
-- **CSS3**: Estilização e responsividade.
-- **JavaScript (Node.js)**: Backend simples para servir os arquivos.
-- **Formspree**: Integração para o envio de dados do formulário.
+- **HTML5**: O básico pra estruturar a página.
+- **CSS3**: Para estilizar e deixar tudo responsivo.
+- **JavaScript (Node.js)**: Serve os arquivos e faz o backend básico.
+- **Formspree**: A ferramenta que recebe os dados do formulário.
 
-## Como Rodar o Projeto
+## Como rodar isso?
 
-1. **Instalar as dependências**:
-   Execute o seguinte comando para instalar as dependências necessárias:
+1. **Instala as dependências**:
+   No terminal, dá um:
    ```bash
    npm install
-Iniciar o servidor: Após a instalação das dependências, inicie o servidor com:
--node server.js
+Sobe o servidor: Depois, roda o servidor com:
 
-Acessar o formulário: Com o servidor rodando, acesse http://localhost:3000 no navegador para visualizar o formulário de contato.
+node server.js
+
+Acessa no navegador: Vai no http://localhost:3000 e vê o formulário rodando bonitinho.
 
 
-
+O que o formulário faz?
+Pega o nome, email e mensagem do usuário.
+Quando você clica em enviar, os dados vão pro Formspree.
+Tudo isso com um layout que se adapta bem em celular e desktop (responsivo é a palavra chique pra isso).
